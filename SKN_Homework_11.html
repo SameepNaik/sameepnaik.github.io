@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="eng">
+
+<head>
+	<meta charset="UTF-8 "name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="homework_11_style.css">
+	<title>Data Analytics Web Visualization Dashboard</title>
+</head>
+
+<body>
+<div class="navbar">
+	<a href="SKN_Homework_11.html"class="logo"><i class="fa fa-home" aria-hidden="true"></i>Latitude</a>
+	<div class="navbar_links" style="right:0;">
+		<a href="comparison.html"><i class="fa fa-area-chart" aria-hidden="true"></i>Comparison</a>
+		<a href="data.html"><i class="fa fa-database" aria-hidden="true"></i>Data</a>
+		<div class="dropdown">
+			<button class="dropbtn">Plots<i class="fa fa-caret-down"></i></button>
+			<div class="dropdown-content"style="right:0;">
+				<a href="max_temp.html">Max Temperature</a>
+				<a href="humidity.html">Humidity</a>
+				<a href="cloudiness.html">Cloudiness</a>
+				<a href="wind_speed.html">Wind Speed</a>
+			</div>
+		</div>
+	</div>
+</div>
+	<!-- Landing Page -->
+<main class="container">	
+	<section id="primary">
+		<h1>Summary: Latitude vs. X</h1>
+		<section id="figue">
+			<img id="summary_image" src="images/Fig1.png" alt="Figure 1">
+		</section>
+		<p id="par1">
+			The purpose of this project was to analzye how weather changes as you get closer to theh equator.  
+			To accomlish this analsis, we first pulled datafrom the OpenWeatherMap API to assemble a dataset on over 500 cities.
+		</p>
+		<p id="par2">
+			After assembling the dataset, we used Matplotlib to plot various aspects of the weather vs latitude.
+			Factors we looked at included: temperature, cloudiness, wind speed, and humidity.
+			This site provides the source data and visualizations created as part of the analysis, as well as explanations and depictions of any trends and correlations witnessed.
+		</p>
+		
+	</section>
+
+	<aside id="secondary">
+	<h2>Visualizations</h2>
+	<div class="images">
+		<a href="max_temp.html">
+			<img src="images/Fig1.png" alt="Figure 1" style="width:200px;height:150px;">
+		</a>
+		<a href="humidity.html">
+			<img src="images/Fig2.png" alt="Figure 2" style="width:200px;height:150px;">
+		</a>
+		<a href="cloudiness.html">
+			<img src="images/Fig3.png" alt="Figure 3" style="width:200px;height:150px;">
+		</a>
+		<a href="wind_speed.html">
+			<img src="images/Fig4.png" alt="Figure 4" style="width:200px;height:150px;">
+		</a>
+	</div>
+	</aside>
+</main>
+</body>
+
+</html>
